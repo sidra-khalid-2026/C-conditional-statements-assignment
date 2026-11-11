@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double matric, inter, entry;
+    cout << "Matric %: "; cin >> matric;
+    cout << "Inter %: "; cin >> inter;
+    cout << "Entry Test %: "; cin >> entry;
+
+    if (matric < 60 || inter < 65 || entry < 50) {
+        cout << "Admission Rejected";
+    } else {
+        cout << "Admission Approved\n";
+        if (inter >= 85 && entry >= 80)
+            cout << "Category: Merit Scholarship";
+        else
+            cout << "Category: Regular Admission";
+    }
+    return 0;
+}
